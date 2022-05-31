@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 @ToString
-@Component("catBean")
+//@Component("catBean")
 public class Cat implements Pet{
     private static Logger log = LogManager.getLogger(Cat.class);
     public Cat() {
