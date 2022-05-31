@@ -3,8 +3,10 @@ package ru.kostkin.spring.demospring;
 import lombok.ToString;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Component;
 
 @ToString
+@Component("catBean")
 public class Cat implements Pet{
     private static Logger log = LogManager.getLogger(Cat.class);
     public Cat() {
