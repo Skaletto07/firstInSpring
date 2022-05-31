@@ -15,4 +15,12 @@ public class Dog implements Pet{
     public void say() {
         System.out.println("Bow-Wow");
     }
+
+    protected void init() {
+        log.debug("Class Dog: init method");
+    }
+
+    private void destroy() {
+        log.debug("Class Dog: destroy method");
+    }
 }
