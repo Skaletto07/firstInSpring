@@ -10,7 +10,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 @ToString
-@Component
+//@Component
 @Scope
 public class Dog implements Pet{
 
@@ -23,13 +23,13 @@ public class Dog implements Pet{
         System.out.println("Bow-Wow");
     }
 
-    @PostConstruct
-    private void init() {
-        log.debug("Class Dog: init method");
-    }
-
-    @PreDestroy
-    private void destroy() {
-        log.debug("Class Dog: destroy method");
-    }
+//    @PostConstruct
+//    private void init() {
+//        log.debug("Class Dog: init method");
+//    }
+//
+//    @PreDestroy
+//    private void destroy() {
+//        log.debug("Class Dog: destroy method");
+//    }
 }
